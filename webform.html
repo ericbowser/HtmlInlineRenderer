@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>My Survey Form</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: black; margin: 7em; max-width: 400px; box-shadow: brown 0 333px 633px 0;">
+  <div style="background-color: lightblue; padding: 30px;">
+    <h1 id="title">Survey Form</h1>
+    <p id="survey-form">How do you like my content:</p>
+    <form>
+      <div>
+        <label for="name" id="name-label">Name:
+          <input id="name" type="text" placeholder="name" required />
+        </label>
+        </div>
+          <br/>
+        <div >
+        <label for="email" id="email-label">Email:
+          <input id="email" type="text" placeholder="email" required/>
+        </label>
+        </div>
+          <br/>
+        <div>
+          <label for="number" id="number-label">Number:
+            <input id="number" type="number" placeholder="number" min="0" max="5" required/>
+          </label>
+        </div>
+        <br/>
+        <br/>
+        <div>
+          <label for="bad">Bad:
+            <input type="radio" name="bad" id="bad" />
+          </label>
+          <label for="good">Good:
+            <input type="radio" name="good" id="good" checked/>
+          </label>
+          <div>
+          <label for="checkgood">Good:
+            <input type="checkbox" id="checkgood"/>
+          </label>
+          <label for="checkbad">Bad:
+             <input type="checkbox" id="checkbad" checked/>
+          </label>
+          </div>
+        </div>
+        <br/>
+        <br/>
+        <div>
+         <label for="comments" id="comment-label">Comments:
+          <textarea id="comments" name="comments">
+          </textarea>
+          </label>
+        </div>
+        <br />
+        <div style="margin-bottom: 30px;">
+           <button id="submit" name="submit" type="submit">Submit</button>
+        </div>
+    </form>
+  </body>
+</html>

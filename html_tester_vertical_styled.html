@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Tester</title>
+<style>
+    body { font-family: Arial, sans-serif; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+    h2 { color: #333; }
+    textarea { width: 80%; margin-top: 10px; }
+    button { background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; margin-top: 10px; }
+    button:hover { background-color: #45a049; }
+    #output { border: 1px solid #000; margin-top: 20px; padding: 10px; width: 80%; min-height: 100px; }
+</style>
+</head>
+<body>
+<h2>HTML Tester</h2>
+<p>Enter HTML code below and see the output:</p>
+<textarea id="htmlInput"></textarea><br>
+<button onclick="runCode()">Run</button>
+<div id="output"></div>
+<script>
+function runCode() {
+    var htmlCode = document.getElementById("htmlInput").value;
+    var outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = htmlCode;
+}
+</script>
+</body>
+</html>

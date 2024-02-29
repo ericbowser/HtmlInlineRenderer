@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Tester</title>
+</head>
+<body>
+<h2>HTML Tester</h2>
+<p>Enter HTML code below and see the output:</p>
+<textarea id="htmlInput" style="width: 100%; height: 100px;"></textarea><br>
+<button onclick="runCode()">Run</button>
+<div id="output" style="border: 1px solid #000; margin-top: 20px; padding: 10px;"></div>
+<script>
+function runCode() {
+    var htmlCode = document.getElementById("htmlInput").value;
+    var outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = htmlCode;
+}
+</script>
+</body>
+</html>
